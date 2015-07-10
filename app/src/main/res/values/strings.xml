@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">yugioh crazy rules</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-9126577024673696/4761858560</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-9126577024673696/2587121365</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="funebre">todos los monstruos tienen un nivel menos.</string>
+    <string name="rai_oh">no se pueden añadir cartas excepto robando.</string>
+    <string name="muralla">no se pueden retirar cartas del juego.</string>
+    <string name="drenaje_de_habilidad">todos los monstruos pierden sus efectos.</string>
+
+    <string name="gravesdad">los monstruos de nivel 4 o mayor no pueden atacar.</string>
+    <string name="vanity">no se puede invocar de especial.</string>
+    <string name="cuidador_de_tumbas">cada vez que declares un ataque envia la primera carta de tu deck al cementerio.</string>
+    <string name="macro">cualquier carta mandada al Cementerio es, en vez, desterrada.</string>
+    <string name="pierde1turno">Durante el turno en el que un monstruo es Invocado de Modo Especial, niega sus efectos. Si uno o más Monstruos de Efecto son Invocados de Modo Especial en Posición de Ataque: cámbialo a Posición de Defensa..</string>
+    <string name="area_a">Todos los monstruos de Nivel 3 o inferior boca arriba en el Campo son cambiados a Posición de Ataque.</string>
+    <string name="area_b">Todos los monstruos de Nivel 4 o superior boca arriba en el Campo son cambiados a Posición de Defensa.</string>
+    <string name="limite">Ningún jugador puede Invocar más de dos veces por turno.</string>
+
+    <string name="mostrar">juega mostrabdo la mano</string>
+    <string name="intercambio_ataque">todos los monstruos intercambian el ataque por su defensa. </string>
+    <string name="descarte">al final de cada turno descarta una carta(exceptuando el primer turno).</string>
+    <string name="no_magias">no se pueden activar cartas magicas</string>
+    <string name="no_trampas">no se pueden activar trampas.</string>
+    <string name="no_extra">no se puede invocar de especial desde el extra deck.</string>
+    <string name="vanity_mano">no se puede invocar de especial desde la mano.</string>
+    <string name="vanity_cementerio">no se puede invocar de especial desde el cementerio.</string>
+    <string name="skill_battle">no se pueden activar efectos en la battle phase.</string>
+    <string name="no_set">no se pueden setear cartas.</string>
+    <string name="solo1">solo se puede invocar un mosntruo por turno.</string>
+    <string name="draw2">roba 2 cartas en la draw phase.</string>
+    <string name="quemadura">al final del turno pierde 500 lf.</string>
+    <string name="deckvoletado">juega con el deck boca arriba.</string>
+    <string name="sin_defensas">la defensa de todos los mosntruos es 0.</string>
+    <string name="sin_ataque">el ataque de todos los mnostruos es 0.</string>
+    <string name="renacer">al final del turno invoca un monstruo de tu cementerio.</string>
+    <string name="sacrifica">al final del turno sacrifica un monstruo que controles.</string>
+    <string name="sniper">al final del turno destruye una carta seteada del rival.</string>
+    <string name="un_ataque">solo un monstruo puede declarar ataque en la battle phase.</string>
+
+
+</resources>
