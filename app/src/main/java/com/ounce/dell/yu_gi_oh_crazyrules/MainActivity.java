@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -28,6 +30,10 @@ public class MainActivity extends ActionBarActivity {
     List<String> num;
     AdView ad1,ad2;
     AdRequest adR,adR2;
+
+    Animation moveLeft, moveRigth, moveUp, moveDown;
+    Animation respiracion, moveUpPlay, locura;
+    Animation openbt, closebt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +41,7 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().hide();
         tvModo = (TextView) findViewById(R.id.tvModo);
         tvModo.setText("");
+        ponerImagen(R.drawable.backcard);
         //BANNER
         ad1 = (AdView) findViewById(R.id.adView);
         adR = new AdRequest.Builder().build();
@@ -45,26 +52,140 @@ public class MainActivity extends ActionBarActivity {
         ad2.loadAd(adR2);
     }
     public void nuevoModo(View view){
+        moveDown = AnimationUtils.loadAnimation(this, R.anim.movedown);
+        tvModo.startAnimation(moveDown);
         switch (numeroAleatorio()){
             case "0":
             tvModo.setText(R.string.funebre);
-                ponerImagen(R.drawable.arte_del_espiritu_oscuro_codicia);
+                ponerImagen(R.drawable.cancion_funebre_de_estigia);
                 break;
             case "1":
                 tvModo.setText(R.string.rai_oh);
-                ponerImagen(R.drawable.arte_espiritual_de_la_luz_hijiri);
+                ponerImagen(R.drawable.trueno_raioh);
                 break;
             case "2":
-                tvModo.setText(R.string.drenaje_de_habilidad);
-                ponerImagen(R.drawable.arte_espiritual_de_la_tierra_kurogane);
+                tvModo.setText(R.string.muralla);
+                ponerImagen(R.drawable.muralla_de_hierro_imperial);
                 break;
             case "3":
-                tvModo.setText(R.string.muralla);
-                ponerImagen(R.drawable.arte_espiritual_del_agua_aoi);
+                tvModo.setText(R.string.drenaje_de_habilidad);
+                ponerImagen(R.drawable.drenaje_de_habilidad);
+                break;
+            case "4":
+                tvModo.setText(R.string.gravedad);
+                ponerImagen(R.drawable.atar_a_la_gravedad);
+                break;
+            case "5":
+                tvModo.setText(R.string.vanity);
+                ponerImagen(R.drawable.vanity);//
+                break;
+            case "6":
+                tvModo.setText(R.string.cuidador_de_tumbas);
+                ponerImagen(R.drawable.servidor_del_cuidador_de_tumbas);
+                break;
+            case "7":
+                tvModo.setText(R.string.macro);
+                ponerImagen(R.drawable.macro_cosmos_ocg);
+                break;
+            case "8":
+                tvModo.setText(R.string.pierde1turno);
+                ponerImagen(R.drawable.pierde_1_turno);
+                break;
+            case "9":
+                tvModo.setText(R.string.area_a);
+                ponerImagen(R.drawable.limite_de_nivel_area_a);
+                break;
+            case "10":
+                tvModo.setText(R.string.area_b);
+                ponerImagen(R.drawable.limite_de_nivel_area_b);
+                break;
+            case "11":
+                tvModo.setText(R.string.limite);
+                ponerImagen(R.drawable.limite_a_la_invocacion);
+                break;
+            case "12":
+                tvModo.setText(R.string.mostrar);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "13":
+                tvModo.setText(R.string.intercambio_ataque);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "14":
+                tvModo.setText(R.string.descarte);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "15":
+                tvModo.setText(R.string.no_magias);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "16":
+                tvModo.setText(R.string.no_trampas);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "17":
+                tvModo.setText(R.string.no_extra);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "18":
+                tvModo.setText(R.string.vanity_mano);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "19":
+                tvModo.setText(R.string.vanity_cementerio);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "20":
+                tvModo.setText(R.string.skill_battle);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "21":
+                tvModo.setText(R.string.no_set);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "22":
+                tvModo.setText(R.string.solo1);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "23":
+                tvModo.setText(R.string.draw2);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "24":
+                tvModo.setText(R.string.quemadura);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "25":
+                tvModo.setText(R.string.deckvoletado);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "26":
+                tvModo.setText(R.string.sin_defensas);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "27":
+                tvModo.setText(R.string.sin_ataque);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "28":
+                tvModo.setText(R.string.renacer);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "29":
+                tvModo.setText(R.string.sacrifica);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "30":
+                tvModo.setText(R.string.sniper);
+                ponerImagen(R.drawable.backcard);
+                break;
+            case "31":
+                tvModo.setText(R.string.un_ataque);
+                ponerImagen(R.drawable.backcard);
                 break;
             default:
                 tvModo.setText(R.string.area_a);
-                ponerImagen(R.drawable.arte_espiritual_del_fuego_kurenai);
+                ponerImagen(R.drawable.backcard);
                 break;
 
         }
@@ -88,7 +209,26 @@ public class MainActivity extends ActionBarActivity {
         num.add("8");
         num.add("9");
         num.add("10");
-
+        num.add("11");
+        num.add("13");
+        num.add("14");
+        num.add("15");
+        num.add("16");
+        num.add("17");
+        num.add("18");
+        num.add("19");
+        num.add("20");
+        num.add("21");
+        num.add("22");
+        num.add("23");
+        num.add("24");
+        num.add("25");
+        num.add("26");
+        num.add("27");
+        num.add("28");
+        num.add("29");
+        num.add("30");
+        num.add("31");
 
         Random aleatorio = new Random();
         return num.get(aleatorio.nextInt(num.size()));
