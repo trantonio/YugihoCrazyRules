@@ -12,7 +12,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -23,17 +22,12 @@ import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
-
-    Button btAleatorio;
-    String modos;
     TextView tvModo;
     List<String> num;
     AdView ad1,ad2;
     AdRequest adR,adR2;
+    Animation  moveDown;
 
-    Animation moveLeft, moveRigth, moveUp, moveDown;
-    Animation respiracion, moveUpPlay, locura;
-    Animation openbt, closebt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -242,12 +236,6 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
 
 
         return super.onOptionsItemSelected(item);
